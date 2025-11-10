@@ -1,0 +1,23 @@
+{
+  "name": "beautifulart",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/CAROLINE-149/Beautiful_Arts#readme",
+  "bugs": {
+    "url": "https://github.com/CAROLINE-149/Beautiful_Arts/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CAROLINE-149/Beautiful_Arts.git"
+  },
+  "license": "ISC",
+  "author": "Caroline onyango",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  }
+}
