@@ -11,11 +11,35 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      #home {
+        background-image: url(assets/images/gallery.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      .profile-img {
+        max-width: 150px;
+      }
+      .contributors {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+    </style>
   </head>
-  <body>
+  <body class="min-vh-100">
     <!--Navigation -->
 
-    <nav class="navbar navbar-expand-lg bg-primary">
+    <nav class="navbar navbar-expand-lg bg-primary position-relative z-2">
       <div class="container" py-4>
         <a class="navbar-brand" href="#home">
           <img
@@ -88,5 +112,154 @@
         </div>
       </div>
     </nav>
+
+    <!--Home page-->
+    <section id="home" class="min-vh-100">
+      <div
+        class="position-absolute top-0 start-0 w-100 h-100 bg-primary opacity-50 z-1"
+      ></div>
+
+      <div class="position-relative min-vh-100 py-5 z-3">
+        <div class="container p-5">
+          <h1 class="display-1 fw-bold text-warning">Beautiful Arts Gallery</h1>
+          <h3 class="display-6 text-warning">Museum of Arts</h3>
+          <h5 class="fs-6 text-warning">
+            A blend of modern day and midevil ages
+          </h5>
+          <p class="lead fw-lighter fs-4 text-light mt-5">
+            Modern art often borrows from medieval aesthetics, blending ancient
+            symbolism with sleek, contemporary forms. Illuminated manuscripts
+            and gothic motifs reappear in digital media and minimalist design.
+            This fusion creates a timeless dialogue between tradition and
+            innovation.
+          </p>
+          <button type="button" class="btn btn-lg btn-light mt-4">
+            Support Us
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!--About us-->
+    <section id="about" class="container my-5">
+      <div class="container py-5">
+        <h1 class="fw-bold">About Us</h1>
+        <h2><span class="text-primary">Beautiful Arts Gallery</span></h2>
+        <p class="lead fw-lighter fs-5 mt-4">
+          Where creativity meets culture, bridging modern and medieval art.
+        </p>
+      </div>
+
+      <!--company description and vision-->
+      <div class="row align-items-center">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 py-4">
+          <img
+            src="assets/images/ancient.jpg"
+            alt="ancient image"
+            class="img-fluid w-100 rounded-5 shadow"
+          />
+        </div>
+        <div class="col-md-6">
+          <h3 class="fw-bold text-primary py-4">Who We Are</h3>
+          <p class="lead fw-lighter text-dark fs-6">
+            Beautiful Arts Gallery is a collective space that celebrates the
+            harmony between past and present artistry. Our mission is to
+            preserve cultural heritage while showcasing emerging modern
+            expressions.
+          </p>
+          <h3 class="fw-bold text-primary py-4">Our Vision</h3>
+          <p class="lead fw-lighter text-dark fs-6">
+            To inspire creativity globally by connecting people to timeless art,
+            both ancient and modern, through exhibitions, education, and digital
+            innovation.
+          </p>
+        </div>
+      </div>
+
+      <!--founders section-->
+      <section class="founders text-center my-5">
+        <div class="text-center mb-4 mt-5">
+          <h3 class="fw-bold text-primary">Our Founders</h3>
+        </div>
+
+        <div class="row align-items-center mb-4">
+          <div class="col-md-4 mb-4">
+            <img
+              src="assets/svg/profile.svg"
+              alt="founder1"
+              class="profile-img img-fluid rounded-circle mb-3"
+            />
+            <h5 class="fw-bold text-dark">Alexandra Smith</h5>
+            <h6 class="fw-lighter text-primary">Co-Founder & Art Director</h6>
+            <p class="fw-lighter text-dark">
+              Passionate about shaping visual experiences that inspire and
+              connect people.
+            </p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <img
+              src="assets/svg/profile.svg"
+              alt="founder2"
+              class="profile-img img-fluid rounded-circle mb-3"
+            />
+            <h5 class="fw-bold text-dark">Jane Doe</h5>
+            <h6 class="fw-lighter text-primary">Co-Founder & Curator</h6>
+            <p class="fw-lighter text-dark">
+              Dedicated to discovering and curating artworks that tell powerful
+              stories.
+            </p>
+          </div>
+          <div class="col-md-4 mb-4 me-8">
+            <img
+              src="assets/svg/profile.svg"
+              alt="founder3"
+              class="profile-img img-fluid rounded-circle mb-3"
+            />
+            <h5 class="fw-bold text-dark">Natasha Bree</h5>
+            <h6 class="fw-lighter text-primary">Gallery Operations Lead</h6>
+            <p class="fw-lighter text-dark">
+              Ensures every exhibition runs seamlessly, bringing art closer to
+              the community.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="contributors text-center my-5">
+        <div class="text-center mb-4 mt-5">
+          <h3 class="fw-bold text-primary">Our Contributors</h3>
+        </div>
+
+        <div class="contributors row align-items-center mb-4">
+          <div class="col-md-4 mb-4">
+            <img
+              src="assets/svg/profile.svg"
+              alt="founder1"
+              class="profile-img img-fluid rounded-circle mb-3"
+            />
+            <h5 class="fw-bold text-dark">John Ribosh</h5>
+            <h6 class="fw-lighter text-primary">Art Exhibition Designer</h6>
+            <p class="fw-lighter text-dark">
+              Creates engaging visual layouts and displays that bring each
+              exhibition theme to life.
+            </p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <img
+              src="assets/svg/profile.svg"
+              alt="founder2"
+              class="profile-img img-fluid rounded-circle mb-3"
+            />
+            <h5 class="fw-bold text-dark">George Binum</h5>
+            <h6 class="fw-lighter text-primary">
+              Community Outreach Coordinator
+            </h6>
+            <p class="fw-lighter text-dark">
+              Builds connections between the gallery and the public through
+              workshops, events, and collaborations.
+            </p>
+          </div>
+        </div>
+      </section>
+    </section>
   </body>
 </html>
