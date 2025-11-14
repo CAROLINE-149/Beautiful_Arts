@@ -34,6 +34,9 @@
         flex-wrap: wrap;
         gap: 20px;
       }
+      .gallery-container {
+        background-color: #f7d488;
+      }
     </style>
   </head>
   <body class="min-vh-100">
@@ -141,7 +144,7 @@
     </section>
 
     <!--About us-->
-    <section id="about" class="container my-5">
+    <section id="about-us" class="container my-3">
       <div class="container py-5">
         <h1 class="fw-bold">About Us</h1>
         <h2><span class="text-primary">Beautiful Arts Gallery</span></h2>
@@ -224,7 +227,7 @@
           </div>
         </div>
       </section>
-      <section class="contributors text-center my-5">
+      <section class="contributors text-center my-3">
         <div class="text-center mb-4 mt-5">
           <h3 class="fw-bold text-primary">Our Contributors</h3>
         </div>
@@ -260,6 +263,56 @@
           </div>
         </div>
       </section>
+    </section>
+
+    <!--Gallery-->
+    <section id="gallery" class="gallery-container my-3">
+      <div class="container text-center py-5">
+        <h1 class="fw-bold">Gallery</h1>
+        <h2><span class="text-primary">Explore Our Collections</span></h2>
+        <p class="fw-lighter fs-5 mt-4">
+          A curated selection of modern and medieval artworks from our
+          exhibitions.
+        </p>
+      </div>
+      <div class="container d-flex justify-content-center">
+        <div
+        id="carousel"
+        class="carousel slide w-50"
+        data-bs-ride="carousel"
+         >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/images/displayimage.jpg" class="d-block w-100" alt="displayimage" />
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/museum.jpg" class="d-block w-100" alt="museum" />
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/sculptures.jpg" class="d-block w-100" alt="sculptures" />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      </div>
     </section>
   </body>
 </html>
